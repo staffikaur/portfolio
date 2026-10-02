@@ -31,6 +31,22 @@ img {
 
 
 /* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --black: #171917;
+    --dark-green: #10261d;
+    --green: #61775a;
+    --light-green: #edf1eb;
+    --cream: #f7f7f4;
+    --white: #ffffff;
+    --gray: #6c6f6b;
+    --border: #dedfda;
+}
+
+
+/* =========================
    NAVBAR
 ========================= */
 
@@ -58,7 +74,7 @@ img {
 
 .logo span,
 footer span {
-    color: #61775a;
+    color: var(--green);
 }
 
 .logo small {
@@ -66,7 +82,7 @@ footer span {
     font-family: Arial, sans-serif;
     font-size: 8px;
     letter-spacing: 3px;
-    color: #6c6f6b;
+    color: var(--gray);
     margin-top: -5px;
 }
 
@@ -82,11 +98,11 @@ footer span {
 }
 
 .navbar nav a:hover {
-    color: #61775a;
+    color: var(--green);
 }
 
 .resume-btn {
-    background: #171917;
+    background: var(--black);
     color: white;
     padding: 13px 22px;
     border-radius: 30px;
@@ -96,7 +112,7 @@ footer span {
 
 .resume-btn:hover {
     transform: translateY(-2px);
-    background: #61775a;
+    background: var(--green);
 }
 
 .menu-btn {
@@ -140,7 +156,7 @@ footer span {
 .contact-info > span {
     font-size: 11px;
     letter-spacing: 3px;
-    color: #61775a;
+    color: var(--green);
     font-weight: bold;
 }
 
@@ -179,21 +195,21 @@ footer span {
 }
 
 .primary {
-    background: #171917;
+    background: var(--black);
     color: white;
 }
 
 .primary:hover {
-    background: #61775a;
+    background: var(--green);
     transform: translateY(-3px);
 }
 
 .secondary {
-    border: 1px solid #171917;
+    border: 1px solid var(--black);
 }
 
 .secondary:hover {
-    background: #171917;
+    background: var(--black);
     color: white;
 }
 
@@ -209,7 +225,7 @@ footer span {
 }
 
 .social-links a:hover {
-    color: #61775a;
+    color: var(--green);
 }
 
 .hero-image {
@@ -227,15 +243,15 @@ footer span {
     position: absolute;
     right: 7%;
     top: 45%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255,255,255,0.95);
     padding: 25px;
     width: 180px;
     border-radius: 10px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 .floating-card span {
-    color: #61775a;
+    color: var(--green);
     font-size: 25px;
 }
 
@@ -247,7 +263,7 @@ footer span {
 
 .floating-card small {
     font-size: 11px;
-    color: #6c6f6b;
+    color: var(--gray);
 }
 
 
@@ -267,7 +283,7 @@ footer span {
 
 .section-subtitle {
     text-align: right;
-    color: #6c6f6b;
+    color: var(--gray);
     margin-top: -35px;
 }
 
@@ -317,7 +333,7 @@ footer span {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: #edf1eb;
+    background: var(--light-green);
 
     display: flex;
     justify-content: center;
@@ -330,7 +346,7 @@ footer span {
 }
 
 .detail p {
-    color: #6c6f6b;
+    color: var(--gray);
     font-size: 13px;
 }
 
@@ -340,7 +356,7 @@ footer span {
 ========================= */
 
 .skills {
-    background: #f7f7f4;
+    background: var(--cream);
 }
 
 .skills-grid {
@@ -355,7 +371,6 @@ footer span {
     border: 1px solid #e4e5e1;
     border-radius: 10px;
     min-height: 125px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -366,7 +381,7 @@ footer span {
 
 .skill-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
 .skill-card h3 {
@@ -412,7 +427,7 @@ footer span {
 }
 
 .seo {
-    color: #61775a;
+    color: var(--green);
 }
 
 
@@ -435,10 +450,11 @@ footer span {
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
     margin-top: 50px;
+    
 }
 
 .project-card {
-    border: 1px solid #dedfda;
+    border: 1px solid var(--border);
     border-radius: 12px;
     overflow: hidden;
     background: white;
@@ -448,7 +464,7 @@ footer span {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
 .project-preview {
@@ -487,7 +503,7 @@ footer span {
 }
 
 .project-content p {
-    color: #6c6f6b;
+    color: var(--gray);
     font-size: 13px;
     margin: 8px 0 15px;
 }
@@ -522,7 +538,7 @@ footer span {
 ========================= */
 
 .experience {
-    background: #f7f7f4;
+    background: var(--cream);
 }
 
 .timeline {
@@ -545,12 +561,12 @@ footer span {
     width: 13px;
     height: 13px;
 
-    background: #61775a;
+    background: var(--green);
     border-radius: 50%;
 }
 
 .timeline-date {
-    color: #61775a;
+    color: var(--green);
     font-size: 12px;
 }
 
@@ -560,13 +576,13 @@ footer span {
 }
 
 .timeline-content h4 {
-    color: #6c6f6b;
+    color: var(--gray);
     font-weight: normal;
     margin: 4px 0;
 }
 
 .timeline-content p {
-    color: #6c6f6b;
+    color: var(--gray);
     max-width: 650px;
 }
 
@@ -576,7 +592,7 @@ footer span {
 ========================= */
 
 .contact {
-    background: #10261d;
+    background: var(--dark-green);
     color: white;
     padding: 90px 7%;
 }
@@ -647,7 +663,7 @@ footer span {
     padding: 14px 25px;
 
     background: white;
-    color: #171917;
+    color: var(--black);
 
     border-radius: 30px;
     cursor: pointer;
@@ -656,7 +672,7 @@ footer span {
 }
 
 #contactForm button:hover {
-    background: #61775a;
+    background: var(--green);
     color: white;
 }
 
@@ -671,6 +687,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     background: white;
 }
 
@@ -683,11 +700,11 @@ footer small {
     display: block;
     font-size: 8px;
     letter-spacing: 2px;
-    color: #6c6f6b;
+    color: var(--gray);
 }
 
 footer p {
-    color: #6c6f6b;
+    color: var(--gray);
     font-size: 12px;
 }
 
@@ -738,7 +755,7 @@ footer p {
         flex-direction: column;
         padding: 25px;
 
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     }
 
     .navbar nav.active {
@@ -756,7 +773,7 @@ footer p {
 
     .hero {
         grid-template-columns: 1fr;
-        background: #f7f7f4;
+        background: var(--cream);
     }
 
     .hero-content {
